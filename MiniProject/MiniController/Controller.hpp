@@ -20,8 +20,9 @@ protected:
     //used when being inherited
 public:
     Controller();
-    //Visible
     void start();
+    int addition(int a, int b);
+    void printLines();
 };
 
 #endif /* Controller_hpp */
