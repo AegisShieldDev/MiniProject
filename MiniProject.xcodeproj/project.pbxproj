@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93888F68201A5D85001819EF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93888F67201A5D85001819EF /* main.cpp */; };
+		93888F74201A5F07001819EF /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93888F72201A5F07001819EF /* Controller.cpp */; };
+		93888F76201A5F13001819EF /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93888F75201A5F13001819EF /* Runner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		93888F64201A5D85001819EF /* MiniProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MiniProject; sourceTree = BUILT_PRODUCTS_DIR; };
-		93888F67201A5D85001819EF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		93888F72201A5F07001819EF /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		93888F73201A5F07001819EF /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
+		93888F75201A5F13001819EF /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		93888F66201A5D85001819EF /* MiniProject */ = {
 			isa = PBXGroup;
 			children = (
-				93888F67201A5D85001819EF /* main.cpp */,
+				93888F70201A5E97001819EF /* MiniController */,
 			);
 			path = MiniProject;
+			sourceTree = "<group>";
+		};
+		93888F70201A5E97001819EF /* MiniController */ = {
+			isa = PBXGroup;
+			children = (
+				93888F72201A5F07001819EF /* Controller.cpp */,
+				93888F73201A5F07001819EF /* Controller.hpp */,
+				93888F75201A5F13001819EF /* Runner.cpp */,
+			);
+			path = MiniController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93888F68201A5D85001819EF /* main.cpp in Sources */,
+				93888F74201A5F07001819EF /* Controller.cpp in Sources */,
+				93888F76201A5F13001819EF /* Runner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
