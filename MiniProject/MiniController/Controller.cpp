@@ -7,6 +7,7 @@
 //
 
 #include "Controller.hpp"
+#include <vector>
 
 using namespace std;
 
@@ -26,8 +27,9 @@ void Controller :: start()
     z = addition (5,3);
     //cout << "The result is " << z;
     
-    printLines();
-    makeArrays();
+    //printLines();
+    //makeArrays();
+    makeVectors();
 }
 
 int Controller :: addition (int a, int b)
@@ -35,6 +37,36 @@ int Controller :: addition (int a, int b)
     int r;
     r = a + b;
     return r;
+}
+
+void Controller :: makeVectors()
+{
+    std::vector<int> firstVector  {1, 2, 3, 4, 5 };
+    std::vector<int> secondVector {6, 7, 8, 9, 10};
+    
+    for(int i = 0; i < 5; i++)
+    {
+        if(i < 4)
+        {
+            cout << firstVector[i] << ", ";
+        }
+        else if(i == 4)
+        {
+            cout << firstVector[i] << endl;
+        }
+    }
+    for(int i = 0; i < 5; i++)
+    {
+        if(i < 4)
+        {
+            cout << secondVector[i] << ", ";
+        }
+        else if(i == 4)
+        {
+            cout << secondVector[i] << endl;
+        }
+    }
+    
 }
 
 void Controller :: makeArrays()
@@ -83,17 +115,17 @@ void Controller :: printLines()
 {
     string name = "Wyatt";
     
-    //cout << name << endl;
+    cout << name << endl;
     
     for(int index = 13; index < 32; index++)
     {
-        //cout <<  index << " ";
+        cout <<  index << " ";
         
         if(index == 31)
             cout << "" << endl;
     }
     
-    //cout <<  &name << endl;
-    //cout <<  "My Name is " << name << " and I'm learning C++" << endl;
+    cout <<  &name << endl;
+    cout <<  "My Name is " << name << " and I'm learning C++" << endl;
 }
 

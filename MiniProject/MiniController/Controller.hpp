@@ -24,6 +24,7 @@ public:
     int addition(int a, int b);
     void printLines();
     void makeArrays();
+    void makeVectors();
 };
 
 #endif /* Controller_hpp */
