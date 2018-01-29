@@ -23,6 +23,7 @@ public:
     void start();
     int addition(int a, int b);
     void printLines();
+    void makeArrays();
 };
 
 #endif /* Controller_hpp */
